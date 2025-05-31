@@ -9,3 +9,11 @@ Feature: Display the steps of the checkout process
 
 
     #TODO: Create scenarios that cover all the acceptance criteria
+
+    Background:
+        Given User is on the enrollment page
+
+    Scenario: Verify that Steps 'Start Application' 'Payment Plan' and 'Review' displayed
+        Then Start Application is displayed and it's highlighted in blue
+        Then Payment Plan is displayed and it's highlighted in grey
+        Then Review is displayed and it's highlighted in grey
